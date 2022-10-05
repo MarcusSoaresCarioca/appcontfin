@@ -3,70 +3,101 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#5D8679',
     },
 
-    divForm: {
-        flex: 4,
-        backgroundColor: '#506266',
-        paddingTop: 20,
-    },
-
-    divInput1: {
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        width: 240,
-        height: 80,
-        backgroundColor: '#7FF08C',
-        margin: 10,
-        borderRadius: 10,
-        flexDirection:'row'
+    divTop: {
+        flex: 0.8,
+        flexDirection: 'row',
 
     },
 
-    divInput2: {
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        width: 240,
-        height: 80,
-        backgroundColor: '#EB4A4A',
-        margin: 10,
-        borderRadius: 10,
-        flexDirection:'row'
-
+    inputReceitas: {
+        width: '80%',
+        height: 60,
+        borderRadius: 20,
+        backgroundColor: '#BAE6BE',
+        fontSize: 30,
+        textAlign: 'center'
     },
 
-    txtinput: {
-        fontSize: 28,
-        textAlign: 'center',
-        justifyContent: 'center',
-        fontWeight: 'bold',
+    inputDespesas: {
+        width: '80%',
+        height: 60,
+        borderRadius: 20,
+        backgroundColor: '#D16762',
+        fontSize: 30,
+        textAlign: 'center'
     },
 
-    divIcon: {
-        flex: 1,
-    },
-
-    divFinanceiro: {
-        flex: 1,
-        backgroundColor: '#000',
+    divInputs: {
+        flex: 2,
         alignItems: 'center',
-        justifyContent: 'center',
-
-        borderTopStartRadius: 100,
-        borderTopEndRadius: 100,
-
-
+        justifyContent: 'space-evenly'
     },
 
-    txtfinanceiro: {
+    divbtn: {
+        flex: 1.4,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    divTitulo: {
+        flex: 0.3,
+        backgroundColor: '#000',
+        borderTopLeftRadius: 50,
+        borderTopRightRadius: 50,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    txtTitulo: {
         color: '#fff',
-        fontSize: 20,
-        fontWeight: 'bold'
+        fontSize: 24
     },
 
-    divResult: {
-        flex: 4
+    divLista: {
+        flex: 2,
+        backgroundColor: '#fff',
+        
+    },
+
+    itemListaReceita: {
+        width:'90%',
+        height:40,
+        backgroundColor:'#BAE6BE',
+        marginHorizontal:15,
+        borderRadius:20,
+        justifyContent:'space-around',
+        alignItems:'center',
+        flexDirection:'row',
+        marginTop:8,
+        
+    },
+
+    itemListaDespesa: {
+        width:'90%',
+        height:40,
+        backgroundColor:'#D16762',
+        marginHorizontal:15,
+        borderRadius:20,
+        justifyContent:'space-around',
+        alignItems:'center',
+        flexDirection:'row',
+        marginTop:8,
+        
+    },
+
+    txtTipo: {
+        fontSize:20,
+        
+    },
+
+    valorItem: {
+        fontSize:21,
+        fontWeight:'bold'
     }
+
 })
 
 export default styles;
